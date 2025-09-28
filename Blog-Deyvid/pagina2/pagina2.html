@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página 2</title>
+  <link rel="stylesheet" href="pagina2.css">
+</head>
+<body>
+
+  <header class="barra-superior">
+    <img src="../img/logo upla.png" alt="Logo" class="logo">
+    <h1 class="titulo">Repositorio de Semanas</h1>
+  </header>
+
+  <section class="contenedor-botones">
+    <h2 class="subtitulo">Selecciona una semana</h2>
+
+    <div class="grid-botones">
+      <!-- Generamos 16 botones -->
+      <button class="boton" data-semana="1">Semana 1</button>
+      <button class="boton" data-semana="2">Semana 2</button>
+      <button class="boton" data-semana="3">Semana 3</button>
+      <button class="boton" data-semana="4">Semana 4</button>
+      <button class="boton" data-semana="5">Semana 5</button>
+      <button class="boton" data-semana="6">Semana 6</button>
+      <button class="boton" data-semana="7">Semana 7</button>
+      <button class="boton" data-semana="8">Semana 8</button>
+      <button class="boton" data-semana="9">Semana 9</button>
+      <button class="boton" data-semana="10">Semana 10</button>
+      <button class="boton" data-semana="11">Semana 11</button>
+      <button class="boton" data-semana="12">Semana 12</button>
+      <button class="boton" data-semana="13">Semana 13</button>
+      <button class="boton" data-semana="14">Semana 14</button>
+      <button class="boton" data-semana="15">Semana 15</button>
+      <button class="boton" data-semana="16">Semana 16</button>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <h2 id="titulo-modal"></h2>
+      <p>Elige una acción:</p>
+      <div class="modal-botones">
+        <a id="verDocumento" class="modal-btn" target="_blank">Ver documento</a>
+        <a id="descargarDocumento" class="modal-btn" download>Descargar</a>
+      </div>
+      <button id="cerrarModal" class="cerrar-btn">Cerrar</button>
+    </div>
+  </div>
+
+  <footer class="pie">
+    <p>© 2025 DEYVID VELASQUEZ DURAN - Repositorio académico</p>
+  </footer>
+
+  <script src="pagina.js"></script>
+</body>
+</html>
