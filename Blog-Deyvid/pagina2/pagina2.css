@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.barra-superior {
+  width: 100%;
+  height: 120px;
+  background-color: #a24b4b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.logo {
+  height: 80px;
+  position: absolute;
+  left: 20px;
+}
+
+.titulo {
+  font-size: 30px;
+  margin: 0;
+}
+
+/* BOTONES */
+.contenedor-botones {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.grid-botones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.boton {
+  background-color: #7b2e2e;
+  color: #fff;
+  border: 3px solid #a24b4b;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: #a24b4b;
+  transform: scale(1.05);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background-color: #7b2e2e;
+  padding: 30px;
+  border-radius: 10px;
+  border: 3px solid #a24b4b;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-btn {
+  display: inline-block;
+  background-color: #a24b4b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.modal-btn:hover {
+  background-color: #8b3c3c;
+}
+
+.cerrar-btn {
+  margin-top: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cerrar-btn:hover {
+  background-color: #555;
+}
+
+/* Footer */
+.pie {
+  text-align: center;
+  background-color: #a24b4b;
+  padding: 20px;
+}
+/* 🌟 Efecto neón del título */
+.titulo {
+  color: #fff;
+  text-shadow: 
+    0 0 6px #ffb3b3,
+    0 0 12px #ff6b6b,
+    0 0 25px #a24b4b,
+    0 0 45px #ff6b6b;
+  animation: titleGlow 2.5s infinite alternate ease-in-out;
+}
+
+@keyframes titleGlow {
+  0% {
+    text-shadow: 
+      0 0 5px #ff6b6b,
+      0 0 10px #ff6b6b,
+      0 0 15px #a24b4b;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #ffb3b3,
+      0 0 25px #ff6b6b,
+      0 0 45px #a24b4b;
+  }
+}
+
+/* 💡 Brillo LED suave para botones */
+.boton {
+  animation: botonGlow 3s infinite alternate ease-in-out;
+  box-shadow: 0 0 10px #a24b4b, 0 0 25px #7b2e2e;
+}
+
+/* Animación LED pulsante */
+@keyframes botonGlow {
+  0% {
+    box-shadow:
+      0 0 10px #a24b4b,
+      0 0 25px #7b2e2e;
+  }
+  100% {
+    box-shadow:
+      0 0 25px #ff6b6b,
+      0 0 45px #ffb3b3;
+  }
+}
+
+/* Hover con pulso extra */
+.boton:hover {
+  background-color: #a24b4b;
+  transform: scale(1.08);
+  box-shadow:
+    0 0 25px #ff6b6b,
+    0 0 50px #ffb3b3;
+}
+/* ✨ Fondo negro base */
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🌈 Capa 1 – luces suaves y grandes */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:
+    radial-gradient(circle, rgba(255,0,0,0.25) 3px, transparent 3px),     /* rojo */
+    radial-gradient(circle, rgba(0,255,255,0.25) 3px, transparent 3px),   /* celeste */
+    radial-gradient(circle, rgba(255,255,0,0.25) 3px, transparent 3px),   /* amarillo */
+    radial-gradient(circle, rgba(255,0,255,0.25) 3px, transparent 3px),   /* violeta */
+    radial-gradient(circle, rgba(0,128,255,0.25) 3px, transparent 3px);   /* azul */
+  background-size: 200px 200px;
+  animation: lucesColoridas 10s infinite alternate ease-in-out;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 🌈 Capa 2 – luces más difusas */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.15) 6px, transparent 6px),
+    radial-gradient(circle, rgba(255,100,100,0.2) 4px, transparent 4px);
+  background-size: 250px 250px;
+  animation: lucesColoridas 12s infinite alternate ease-in-out;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* 💫 Animación de parpadeo suave */
+@keyframes lucesColoridas {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
