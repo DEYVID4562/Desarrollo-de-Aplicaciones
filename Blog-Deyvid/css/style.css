@@ -240,8 +240,10 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto; /* ✅ Permite scroll vertical */
+  overflow-x: hidden; /* 🔒 Evita scroll horizontal */
 }
+
 
 /* 🌈 Capa 1 – luces suaves y grandes */
 body::before {
@@ -291,3 +293,4 @@ body::after {
     transform: scale(1);
   }
 }
+

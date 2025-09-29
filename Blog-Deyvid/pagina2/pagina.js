@@ -8,7 +8,7 @@ const cerrarModal = document.getElementById("cerrarModal");
 botones.forEach(boton => {
   boton.addEventListener("click", () => {
     const semana = boton.dataset.semana;
-    const ruta = `../documentos/semana${semana}.pdf`;
+    const ruta = `../Documento/semana${semana}.pdf`;
 
     tituloModal.textContent = `Semana ${semana}`;
     verDocumento.href = ruta;
